@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(../Img/carga_aduana.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+nav {
+    background-color: #11698E;
+    width: 100%;
+    height: 101px;
+    float: right;
+    position: fixed;
+}
+
+/* aqui damos algunos indicaciones al Navbar  */
+
+nav ul {
+    float: right;
+    display: flex;
+}
+
+nav ul li {
+    float: right;
+    list-style: none;
+    position: relative;
+    align-self: center;
+}
+
+/* Parte esencial para el funcionamiento del logo */
+
+
+.logo-menu {
+
+    width: 200px;
+    align-self: center;
+    margin: 10px 20px ;
+    border: 2px;
+    border-radius: 20px;
+  
+}
+
+.Submenu a{
+
+    color: #F8F1F1;
+    padding-left: 10px;
+}
+
+
+/* aqui ya damos los estilos que tiene */
+
+nav ul li a {
+    display: block;
+    padding: 0px 40px;
+    line-height: 101px;
+    font-family: 'Times New Roman';
+    color: #F8F1F1;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #19456B;
+   
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 16px 32px;
+    line-height: unset;
+    white-space: nowrap;
+}
+
+/* Hovers de la pagina */
+
+nav ul li:hover ul { 
+    display: block;
+    top: 100px;
+    width: 180px;
+
+}
+
+nav ul li a:hover{
+    background-color: #fff;
+    color: #19456B;
+    transition:  .5s;
+
+}
+
+nav ul li ul li a:hover {
+    color: #19456B;
+    transition:  .9s;
+    background-color: #F8F1F1;
+}
+
+
+
+/* Formulario */
+
+html {
+
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  
+  button {
+    overflow: visible;
+  }
+  
+  button, select {
+    text-transform: none;
+  }
+  
+  button, input, select, textarea {
+    color: #F8F1F1;
+    font: inherit;
+    margin: 10;
+  }
+  
+  input {
+    line-height: normal;
+  }
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  #container {
+    border: solid 5px #16C79A;
+    max-width: 868px;
+    background-color: #F8F1F1;
+    border-radius: 50px;
+    margin: 60px auto;
+    box-shadow: 0px 0px 40px 30px #19456B;
+    position: static;
+  }
+  
+  form {
+    padding: 37.5px;
+  }
+  
+  /* Caja del formulario */
+
+  .formh1 {
+    color: #F8F1F1;
+    background: #19456B;
+    width: 50%;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    border: 5px solid #16C79A;
+    margin-left: 25%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+  
+
+  
+  .icon_wrapper {
+    margin: 50px auto 0;
+    margin-top: -20px;
+    width: 100%;
+  }
+  
+  .icon {
+    display: block;
+    fill: #11698E;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+  }
+  
+  .email {
+      float: right;
+      width: 45%;
+  }
+  
+  /* Estilos de los campos del formulario */
+
+  input[type='text'], [type='email'],[type='date'], select, textarea {
+      background: none;
+      outline: none;
+      border-bottom: solid 1px #19456B;
+      color: #19456B;
+      font-size: 1.100em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin: 0em 0 2.875em 0;
+      padding: 0 0 0.875em 0;
+      text-transform: uppercase;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  
+
+
+  input[type='text']:focus, [type='email']:focus, textarea:focus {
+      outline:none;
+      padding: 0 0 0.875em 0;
+  }
+  
+.input-class{
+
+    border-bottom: 1px solid #19456B;
+    border-top:none ;
+    border-right: none ;
+    border-left: none ;
+}
+
+  .message {
+      float: none;
+  }
+  
+  .date{
+
+    float: right;
+    margin-right: 10px;
+    width: 45%;
+  }
+
+  .date2{
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+
+  .submit{
+
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .submit a{
+
+    background: #F8F1F1;
+    color: #19456B;
+    border: 3px solid #19456B;
+    padding: 25px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  .submit a:hover{
+
+    background: #19456B;
+    font-weight: 700;
+    color: #F8F1F1;
+  }
+
+ 
+
+  .name {
+      float: left;
+      width: 45%;
+  }
+
+  .Label-fecha{
+
+    background: none;
+    outline: none;
+    color: #19456B;
+    font-size: 1.100em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0em 0 2.875em 0;
+    padding: 0 0 0.875em 0px;
+    text-transform: uppercase;
+    width: 100%;
+
+  }
+
+  #subject_input{
+
+    padding: 10px;
+    margin-bottom: 50px;
+
+  }
+  
+  .subject {
+    width: 100%;
+  }
+  
+  .telephone {
+    width: 100%;
+  }
+  
+  textarea {
+      line-height: 150%;
+      height: 150px;
+      padding: 0px;
+      border: 1px #19456B solid;
+      resize: none;
+     width: 100%;
+  }
+  
+  ::-webkit-input-placeholder {
+      color: #19456B;
+  }
+  
+  :-moz-placeholder { 
+      color: #19456B;
+      opacity: 1;
+  }
+  
+  ::-moz-placeholder {
+      color: #19456B;
+      opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+      color: #19456B;
+  }
+  
+  #form_button {
+    background: none;
+    border: solid 3px #19456B;
+    color: #19456B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+  }
+  
+  #form_button:hover {
+    background: #19456B;
+    color: #F2F3EB;
+  }
+  
+ 
+
+/* Footer de la pagina */
+
+
+footer{
+    width: 100%;
+    background: #11698E;
+    color: #F8F1F1 ;  
+    font-family:  Arial, Helvetica, sans-serif; 
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px 100px;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+/* Estilos del formulario */
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.footer-txt{
+
+    padding-bottom: 15px;
+    margin-left: 30px;
+}
+
+.se-comentario  input[type="submit"]{
+    display:block;
+    width: 100px;
+    margin: 5px 0;
+    padding: 10px 15px;
+    background: none;
+    border:1px solid #16C79A;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+    
+}
+
+.se-comentario  input[type="text1"], .se-comentario  input[type="email1"],.se-comentario textarea{
+    width: 305px;
+    margin: 5px 0;
+    padding: 7px 25px;
+    background: none;
+    border-radius: 5px;
+    color: #F8F1F1;
+    border: 2px solid #19456B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.se-comentario  input::placeholder{
+
+color: #F8F1F1;
+
+
+}
+
+.se-comentario textarea::placeholder{
+
+    color: #F8F1F1;
+    
+    }
+
+
+.bton{
+    display: flex;
+    justify-content: right;
+ }
+
+ .bton input:hover{
+
+    background: #19456B;
+    color: #16C79A;
+ }
+
+ textarea{
+
+    resize: none;
+ }
+
+
+/* Estilos Generales del footer */
+/* Columna 1 de "Deja un comentario" */
+
+.Columnas-1{
+    max-width: 400px;
+}
+
+.Columnas-1 h1{
+    font-size: 22px;
+}
+
+.Columnas-1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+
+/* Columna 2 de "Redes Sociales" */
+
+.Columnas-2{
+    max-width: 400px;
+    
+}
+
+.Columnas-2 h1{
+    font-size: 22px;
+}
+
+/* Fila de la columna de "Redes Sociales" */
+
+.fila-Redes{
+    margin-top: 20px;
+    display: flex;
+}
+
+.fila-Redes img{
+    width: 36px;
+    height: 36px;
+}
+
+.fila-Redes label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+/* Columna 3 de "Informacion Contactos" */
+
+.Columna-3{
+    max-width: 400px;
+}
+
+.Columna-3 h1{
+    font-size: 22px;
+}
+
+
+
+/* Fila de columnas de "Informacion Contactos" */
+
+.fila-contacto{
+    margin-top: 20px;
+    display: flex;
+}
+
+.fila-contacto img{
+    width: 36px;
+    height: 36px;
+}
+
+.fila-contacto label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+
+/* Derechos Reservados estilos */
+
+.caja-footer{
+    width: 100%;  
+    background: #16C79A;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.caja-copyright{
+    color: #F8F1F1;
+}
+
+.copyright a{
+    text-decoration: none;
+    color:#F8F1F1;
+    font-weight: bold;
+}
+
+
+
+
+

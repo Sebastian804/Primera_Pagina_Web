@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(../Img/carga_aduana.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+nav {
+    background-color: #11698E;
+    width: 100%;
+    height: 101px;
+    float: right;
+    position: fixed;
+}
+
+/* aqui damos algunos indicaciones al Navbar  */
+
+nav ul {
+    float: right;
+    display: flex;
+}
+
+nav ul li {
+    float: right;
+    list-style: none;
+    position: relative;
+    align-self: center;
+}
+
+/* Parte esencial para el funcionamiento del logo */
+
+
+.logo-menu {
+
+    width: 200px;
+    align-self: center;
+    margin: 10px 20px ;
+    border: 2px;
+    border-radius: 20px;
+  
+}
+
+.Submenu a{
+
+    color: #F8F1F1;
+    padding-left: 10px;
+}
+
+
+/* aqui ya damos los estilos que tiene */
+
+nav ul li a {
+    display: block;
+    padding: 0px 40px;
+    line-height: 101px;
+    font-family: 'Times New Roman';
+    color: #F8F1F1;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #19456B;
+   
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 16px 32px;
+    line-height: unset;
+    white-space: nowrap;
+}
+
+/* Hovers de la pagina */
+
+nav ul li:hover ul { 
+    display: block;
+    top: 100px;
+    width: 180px;
+
+}
+
+nav ul li a:hover{
+    background-color: #fff;
+    color: #19456B;
+    transition:  .5s;
+
+}
+
+nav ul li ul li a:hover {
+    color: #19456B;
+    transition:  .9s;
+    background-color: #F8F1F1;
+}
+
+
+
+.contenedor-denuncia{
+    display: flex;
+    height: 800px;
+    justify-content: center;
+
+    
+  
+    
+}
+
+
+.denuncia-item{
+    margin: auto;
+    background: #F8F1F1;
+    padding: 100px;
+    text-align: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 100px;
+    border: #16C79A 15px solid;
+    border-radius: 50px;
+    margin-top: 150px;
+
+}
+
+
+.estilo-letra{
+
+    font-family: 'roboto';
+    color: #19456B;
+    text-shadow: 2px 2px #16C79A;
+    
+
+    
+
+}
+
+
+.estilo-letra2{
+
+    font-family: 'roboto';
+    color: #19456B;
+    text-shadow: 2px 2px #16C79A;
+    margin-bottom: 80px;
+
+    
+
+}
+
+
+
+
+.denuncia-item2 a {
+    
+    
+    color: #19456B;
+    text-decoration: none;
+    text-shadow: 2px 2px #16C79A;
+  
+    
+
+}
+
+.denuncia-item2 {
+    
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+/* Footer de la pagina  */
+
+
+footer{
+    width: 100%;
+    background: #11698E;
+    color: #F8F1F1 ;  
+    font-family:  Arial, Helvetica, sans-serif; 
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px 100px;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+/* Estilos del formulario */
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.footer-txt{
+
+    padding-bottom: 15px;
+    margin-left: 30px;
+}
+
+.se-comentario  input[type="submit"]{
+    display:block;
+    width: 100px;
+    margin: 5px 0;
+    padding: 10px 15px;
+    background: none;
+    border:1px solid #16C79A;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+    
+}
+
+.se-comentario  input[type="text1"], .se-comentario  input[type="email1"],.se-comentario textarea{
+    width: 305px;
+    margin: 5px 0;
+    padding: 7px 25px;
+    background: none;
+    border-radius: 5px;
+    color: #F8F1F1;
+    border: 2px solid #19456B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.se-comentario  input::placeholder{
+
+color: #F8F1F1;
+
+
+}
+
+.se-comentario textarea::placeholder{
+
+    color: #F8F1F1;
+    
+    }
+
+
+.bton{
+    display: flex;
+    justify-content: right;
+ }
+
+ .bton input:hover{
+
+    background: #19456B;
+    color: #16C79A;
+ }
+
+ textarea{
+
+    resize: none;
+ }
+
+
+/* Estilos Generales del footer */
+/* Columna 1 de "Deja un comentario" */
+
+.Columnas-1{
+    max-width: 400px;
+}
+
+.Columnas-1 h1{
+    font-size: 22px;
+}
+
+.Columnas-1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+
+/* Columna 2 de "Redes Sociales" */
+
+.Columnas-2{
+    max-width: 400px;
+    
+}
+
+.Columnas-2 h1{
+    font-size: 22px;
+}
+
+/* Fila de la columna de "Redes Sociales" */
+
+.fila-Redes{
+    margin-top: 20px;
+    display: flex;
+}
+
+.fila-Redes img{
+    width: 36px;
+    height: 36px;
+}
+
+.fila-Redes label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+/* Columna 3 de "Informacion Contactos" */
+
+.Columna-3{
+    max-width: 400px;
+}
+
+.Columna-3 h1{
+    font-size: 22px;
+}
+
+
+
+/* Fila de columnas de "Informacion Contactos" */
+
+.fila-contacto{
+    margin-top: 20px;
+    display: flex;
+}
+
+.fila-contacto img{
+    width: 36px;
+    height: 36px;
+}
+
+.fila-contacto label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+
+/* Derechos Reservados estilos */
+
+.caja-footer{
+    width: 100%;  
+    background: #16C79A;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.caja-copyright{
+    color: #F8F1F1;
+}
+
+.copyright a{
+    text-decoration: none;
+    color:#F8F1F1;
+    font-weight: bold;
+}
+
+
